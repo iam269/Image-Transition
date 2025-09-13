@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Transition Effect</title>
+    <title>Image Comparison Slider</title>
+    <!--Stylesheet-->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="transition.png">
 </head>
 <body>
     <div class="container">
-        <div class="img-box">
-            <img src="images/transparent.png" class="img-bg">
-            <div class="img-foreground" id="imgForeground">
-                <img src="images/original.jpg" class="img-main">
-            </div>
-            <div class="slider" id="slider">
-                <img src="images/arrow.png" class="arrow">
-            </div>
-        </div>
+        <img src="image-1.png">
+        <img id="my-img" src="image-2.png">
+        <input type="range" min="0" max="100" value="50" id="slider" oninput="slide()">
     </div>
+
+
+    <!--Script-->
     <script src="script.js"></script>
 </body>
 </html>
